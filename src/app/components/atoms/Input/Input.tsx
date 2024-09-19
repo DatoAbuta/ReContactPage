@@ -1,6 +1,10 @@
 import React from 'react'
 
-export default function Input({title}: any) {
+interface InputProps {
+  title: string;
+}
+
+export default function Input({title}: InputProps) {
   return (
     <div>
         <h4>{title}</h4>
